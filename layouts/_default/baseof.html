@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
-        {{ partial "head.html" . }}
-    </head>
 
-    <body>
-        {{ partial "header.html" . }}
-        <main class="main-wrapper">
-            <div class="main">
-                {{ block "main" . }}{{ end }}
+<head>
+    <title>{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    {{ partial "header.html" . }}
+    <main class="main-wrapper">
+        <div class="main">
+            {{ block "main" . }}{{ end }}
+        </div>
+        <div class="side">
+            <div class="side-recent side-about">
+                <h2>About</h2>
+                <hr />
+                <div class="profile-image-wrapper"><img class="profile-image" src="/images/filipw.jpeg" /></div>
+                <p>Hi! I'm <strong>Filip W.</strong>, a cloud architect from Zürich 🇨🇭. I like <a
+                        href="http://mapleleafs.com" target="_blank">Toronto Maple Leafs</a> 🇨🇦, <a
+                        href="http://rancidrancid.com" target="_blank">Rancid</a> and <a
+                        href="https://link.springer.com/book/10.1007/978-3-030-99379-5" target="_blank">quantum
+                        computing</a>. Oh, and I love
+                    the <a href="http://en.wikipedia.org/wiki/Scottish_Lowlands" target="_blank">Lowlands</a> 🏴󠁧󠁢󠁳󠁣󠁴󠁿.</p>
+                <p> You can
+                    find me on <a href="https://github.com/filipw">Github</a> and on
+                    <a rel="me" href="https://mathstodon.xyz/@filipw">Mastodon</a>.
+                </p>
+                <div class="profile-image-wrapper"><a
+                        href="https://link.springer.com/book/10.1007/978-3-030-99379-5"><img
+                            alt="My Introduction to Quantum Computing with Q# and QDK book"
+                            src="/images/978-3-030-99379-5.jpeg"
+                            title="Introduction to Quantum Computing with Q# and QDK book" width="140"></a></div>
+                <div class="profile-image-wrapper"><img alt="Microsoft MVP" src="/images/MVP_Horizontal_BlueOnly9.png"
+                        title="Microsoft MVP" width="156" height="63"></div>
             </div>
-            <div class="side">
-                {{ range .Site.Sections }}
-                    {{ partial "side-recent.html" . }}
-                {{ end }}
-                {{ partial "side-categories.html" . }}
-                {{ partial "side-tags.html" . }}
-            </div>
-        </main>
-        {{ partial "footer.html" . }}
-    </body>
+            {{ partial "side-categories.html" . }}
+        </div>
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+
 </html>

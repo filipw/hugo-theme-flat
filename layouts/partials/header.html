@@ -1,6 +1,18 @@
 <header class="header-wrapper">
     <div class="header">
-        <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        <div class="logo">
+            <h1> 
+                 <a href="https://www.strathweb.com">
+                 <img src="/images/strathweb.png" alt="Strathweb" class="">
+                     <div class="text">
+                         StrathWeb.
+                         <span>A free flowing tech monologue.</span>
+                     </div>
+                 </a>
+             </h1>
+         </div>
+        <!-- <img src="/images/strathweb.png" alt="Strathweb" /> -->
+        <!-- <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> -->
 
         <ul class="menu">
             {{ range .Site.Menus.main }}

@@ -15,7 +15,6 @@
 
                     {{ with .Params.Categories }}
                         <div class="categories">
-                            <span>Categories:</span>
                             {{ range first 2 . }}
                                 <a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
                             {{ end }}

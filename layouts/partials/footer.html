@@ -4,7 +4,7 @@
             {{ $section := . }}
             {{ with .OutputFormats.Get "rss" }}
                 <a class="footer-item" href="{{ .Permalink }}">
-                    Feed of {{ $section.Section | humanize }}
+                    RSS Feed
                     <i class="icofont-rss"></i>
                 </a>
             {{ end }}
@@ -14,7 +14,7 @@
             {{ $term := . }}
             {{ with .OutputFormats.Get "rss" }}
                 <a class="footer-item" href="{{ .Permalink }}">
-                    Feed of "{{ $term.Title }}"
+                    RSS Feed
                     <i class="icofont-rss"></i>
                 </a>
             {{ end }}
