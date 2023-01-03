@@ -35,6 +35,9 @@
                 <div class="profile-image-wrapper"><img alt="Microsoft MVP" src="/images/MVP_Horizontal_BlueOnly9.png"
                         title="Microsoft MVP" width="156" height="63"></div>
             </div>
+            {{ range .Site.Sections }}
+                {{ partial "side-recent.html" . }}
+            {{ end }}
             {{ partial "side-categories.html" . }}
         </div>
     </main>
