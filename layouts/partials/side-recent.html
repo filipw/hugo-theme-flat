@@ -5,8 +5,11 @@
     <ul>
         {{ range first 5 .RegularPages.ByDate.Reverse }}
             <li>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}">{{ .PublishDate.Format "2006/01/02" }}, {{ .Title }}</a>
             </li>
         {{ end }}
     </ul>
+    <p>
+        <a class="stylish" href="/posts">📚 Full archive</a>
+    </p>
 </div>

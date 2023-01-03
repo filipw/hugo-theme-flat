@@ -1016,3 +1016,13 @@ em, i {
   padding: 1px 5px;
   font-style: normal !important;
 }
+
+
+a.stylish {
+  text-decoration: none;
+  color: var(--color-fav-2)
+}
+
+a.stylish:hover {
+  color: var(--color-fav-3)
+}
