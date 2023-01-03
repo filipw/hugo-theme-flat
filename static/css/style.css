@@ -1006,3 +1006,13 @@ header {
     font-size: 56px;
 }
 }
+
+em, i {
+  font-size: 0.9em;
+  background: #dddddd;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace !important;
+  display: inline-block;
+  padding: 1px 5px;
+  font-style: normal !important;
+}
