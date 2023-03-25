@@ -444,10 +444,6 @@ body {
   margin: 0 var(--len-1);
 }
 
-.list-item .summary>* {
-  margin: 0;
-}
-
 .list-item .title {
   margin: 0 0 var(--len-2) 0;
 }
