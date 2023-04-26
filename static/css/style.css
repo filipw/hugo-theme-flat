@@ -111,6 +111,10 @@ body {
   width: 28%;
 }
 
+pre {
+  margin: 0em;
+}
+
 @media (max-width: 991px) {
   .main {
     padding: var(--len-4);
