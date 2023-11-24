@@ -670,8 +670,8 @@ h3 {
 
 .content hr {
   border: none;
-  height: 2px;
-  background-color: var(--color-light-4);
+  height: 1px;
+  background-color: var(--color-fav-1);
 
   width: 80%;
   margin: var(--len-2) auto;
